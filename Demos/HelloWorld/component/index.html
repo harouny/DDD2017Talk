@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/xcomponent@latest/dist/xcomponent.min.js"></script>
+        <script src="component.js"></script>
+    </head>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+    </style>
+    <body>
+        <div id="helloMsg"></div>
+    </body>
+    <script>
+        const greeting = 'Good evening ';
+        document.querySelector('#helloMsg').innerHTML = greeting + window.xprops.name + '!';
+        window.xprops.onHello(greeting);
+    </script>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/xcomponent@latest/dist/xcomponent.min.js"></script>
+        <script src="http://127.0.0.1:8080/component.js"></script>
+    </head>
+    <body>
+        <h1>The Host</h1>
+        <div id="HelloWorld"></div>
+        <script>
+            window.HelloWorldComponent.render({
+                name: 'Kim',
+                onHello: (greeting) => {
+                    console.log('kim was greeted with: ', greeting);
+                }
+            }, '#HelloWorld');
+        </script>
+    </body>
+</html>
